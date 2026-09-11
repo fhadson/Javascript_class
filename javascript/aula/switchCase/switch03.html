@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<scrip>
+
+    <h1>testando Switch Case</h1>
+    <script>
+
+        let cargo = prompt("Digite seu cargo: (supervisor, gerente, funcionario ou diretor)")
+
+    switch(cargo){
+        case "supervisor":
+            document.write("Acesso restrito ")
+            break
+        case "gerente":
+            document.write("Acesso restrito")
+            break
+        case "funcionario":
+            document.write("Acesso permitido")
+            break
+        case "diretor":
+            document.write("Acesso restrito")
+            break
+            default:
+                document.write("Cargo não encontrado")
+        
+    }
+    
+    </script>
+
+</body>
+</html>

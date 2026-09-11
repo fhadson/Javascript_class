@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        //----tentativa falha
+
+
+        // let foods = prompt("Selecione o o prato: ( 1: prato , 2: sobremesas, 3: bebidas)")
+
+        
+        // let pratos = prompt("selecione o prato: (1, vegetariano, calorias: 180)" + "<br>" + " 2 , Peixe, 230 cal." + "<br>" + " 3, Frango , 250 cal."  + "<br>" + "carne, 350 cal.")
+
+        // let sobremesas
+        // let bebidas
+
+        // switch (foods){
+        //     case "1":
+        //         alert(pratos)
+        //     if (foods === 1) 
+        //         switch (pratos){
+        //         case "1" :
+        //                 alert("Pedido realizado" + "\n" + "Vegetariano, 180cal, R$ 10,00")
+        //             break
+        //         case "2":
+        //             alert("Pedido realizado" + "\n "+ "Peixe, 230cal, R$ 15,00")
+        //             break
+        //         case "3":
+        //             alert("Pedido realizado" + "\n" + "Frango, 250cal, R$10,00")
+        //             break
+        //         case "4":
+        //             alert("Pedido realizado" + "\n" + "Carne, 350cal, R$ 30,00")
+        //         } 
+        //     }
+
+
+
+
+        //-----correção-----------//
+   let prato = Number(prompt(" Escolha o prato pelo número: \n" +
+        "1 - Vegetariano \n" +
+         "2 - Peixe \n" +
+          "1 - Frango \n" +
+           "1 - Carne \n"
+          ))
+ 
+          let caloriasPrato
+ 
+          switch(prato){
+            case 1:
+               caloriasPrato = 180
+               break
+            case 2:
+               caloriasPrato = 230
+               break
+ 
+            case 3:
+               caloriasPrato = 250
+               break
+ 
+            case 4:
+               caloriasPrato = 350
+               break
+ 
+            default:
+               document.write("Pedido inexistente")
+               break
+          }
+ 
+ let sobremesa = Number(prompt(" Escolha a sobremesa pelo número: \n" +
+        "1 - Abacaxi \n" +
+         "2 - Sorvete Diet \n" +
+          "3 - Mousse Diet \n" +
+           "4 - Mousse de chocolate \n"
+          ))
+ 
+          let caloriasSobremesa
+ 
+        switch(sobremesa){
+            case 1:
+               caloriasSobremesa = 75
+               break
+            case 2:
+                caloriasSobremesa = 110
+               break
+            case 3:
+               caloriasSobremesa = 170
+               break
+            case 4:
+                caloriasSobremesa = 200
+               break
+            default:
+               document.write("Sobremesa inexistente")
+               break
+          }
+          //pedidos de bedidas
+
+let bebida = Number(prompt(" Escolha a bebida pelo número: \n" +
+        "1 - chá \n" +
+         "2 - Suco de laranja \n" +
+          "3 - Suco de uva \n" +
+           "4 - refrigerante zero \n"
+          ))
+ 
+          let caloriasbebida
+ 
+        switch(sobremesa){
+            case 1:
+               caloriasbebida = 20
+               break
+            case 2:
+                caloriasbebida = 100
+               break
+            case 3:
+               caloriasbebida = 100
+               break
+            case 4:
+                caloriasbebida = 65
+               break
+            default:
+               document.write("Bebida inexistente")
+               break
+          }
+        let totalCalorias = caloriasPrato +  caloriasSobremesa +  caloriasbebida
+        document.write("O total de calorias são: " + totalCalorias)
+ 
+ 
+
+
+        </script>
+        
+</body>
+</html>

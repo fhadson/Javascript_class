@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>testando comando if - comandos condicionais</title>
+</head>
+    
+<body>
+    <h1> CALCULANDO A MEDIA</h1>
+
+    <script>
+    let nota1 = parseFloat(prompt("Entre com a nota 1: "))
+    let nota2 = parseFloat(prompt("Entre com a nota 2: "))
+     let nota3 = parseFloat(prompt("Entre com a nota 3: "))
+      
+     let media = (nota1 + nota2 + nota3) / 3
+     document.write("A média da nota é: " + media.toFixed(1))
+
+     if (media >=6){
+        document.write("você está aprovado! Parabéns!!" + "<br>")
+     }else if(media >=5){
+        document.write("Você está em recuperação! Estude mais" + "<br>")
+     } 
+     else {
+        document.write("Você está reprovado! Vacilão!!" + "<br>")
+     }
+
+
+    </script>
+</body>
+</html>

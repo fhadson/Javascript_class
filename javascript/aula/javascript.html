@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aprendendo javascript 01</title>
+</head>
+    <script>
+        function teste(){
+            alert("Olá")
+      //let ele pode mudar 
+      // const não muda
+           let idade = "22"  /*ele automaticamente lê se é string, int,float..*/
+           let altura = 1.73
+           let peso = 23.5
+           const nome = "rafael"
+            let nomeAluno = "aluno" //padrão de nomeClatura
+            let soma = idade + altura
+            peso = Number(peso)
+           
+            console.log(nome + "" + nomeDoAluno)
+
+
+
+        }
+        
+        /*comentários:mais de uma linha*/
+        //uma linha só
+    </script>
+    <script>
+        //função teste 
+        function teste(){
+            let soma = 1 + 1 //atribui
+            let comparacao1 = 10.1 == "10.1" //true
+            let comparacao2 = 10.1 === "10" //false
+             let comparacao3 = 10 === 10 //true
+
+
+
+            console.log("Resposta: " + boleano)
+        }
+
+
+    </script>
+    <script>
+        //função teste  condição
+        function teste(){
+            let altura = 1.86
+            let idadecnh = 18 
+            let cnh = true
+
+            const dirige = idadecnh >= 10 && cnh === true
+             console.log("Resposta: " + dirige)
+        
+            let idade = 20
+            const entranoproa = (idade >=17) && (idade <= 23)
+
+            console.log("resposta: " + entranoproa)
+
+        //OU
+        let chuva = true
+        let frio = false
+
+        //const levarBlusa = chuva === true || frio === true
+        
+        const levarBlusa = chuva || frio
+
+        console.log("devo levar blusa? " + levarBlusa)
+        //if 
+         if(idade >=17 && idade <= 23 ){
+            alert("entra no proa")
+         }else if(idade > 23){
+            alert("passou da idade limite")
+    } 
+    else{
+        alert("Não chegou o tempo ainda")
+    }
+
+}
+    </script>
+
+<body>
+    <h1>testando os primeiros comandos em Javascript </h1>
+    <script>
+        document.write("olá mundo! Usando o Javascript") //escreve no no html
+        alert("olá pessoas!!") //exibição na caixa de texto
+        console.log("olá pessoas!!") //exibição no console
+    </script>
+    <button onclick="teste()"> chamar função</button>
+</body>
+</html>
+
