@@ -6,6 +6,18 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <script>
+        let preco = parseFloat(prompt("Qual o valor do produto? "))
+        let quant = parseInt(prompt("Qual a quantidade? "))
+
+        let vt = ( preco * quant )
+        if ( quant > 10){
+            document.write("Desconto de 10% liberado!!")
+            let desc = (vt * 0.10)
+            document.write("Seu valor total é de: " + vt)
+
+        }
+
+    </script>
 </body>
 </html>
