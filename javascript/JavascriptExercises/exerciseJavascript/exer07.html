@@ -6,6 +6,14 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <script>    
+        let salario_base = parseFloat(prompt("Digite o salário base do fundionário: "))
+        let comissao = salario_base * 0.5
+        let sala_liquido = salario_base + comissao
+
+        document.write("comissão, R$ "+ comissao.toFixed(2) + "<br/>")
+         document.write("Salário liquido é de: R$ "+ sala_liquido.toFixed(2))
+
+    </script>
 </body>
 </html>

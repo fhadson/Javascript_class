@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let idade = parseInt(prompt("Digite sua idade: "))
+
+        switch (true) {
+            case idade < 11:
+                document.write("Você é criança")
+                break
+            case idade < 18:
+                document.write("Você é adolescente")
+                break
+            case idade < 60:
+                document.write("Você é adulto")
+                break
+            default:
+                document.write("Você é idoso")
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let num =parseInt(prompt("Digite o primeiro número: "))
+        let num2 = parseInt(prompt("Digite o segundo número: "))
+
+        if (num2 === 0) {
+            document.write("Não é possível verificar múltiplos usando zero.")
+        } else if (num % num2 === 0) {
+            document.write(num + " é múltiplo de " + num2)
+        } else {
+            document.write(num + " não é múltiplo de " + num2)
+        }
+
+    </script>
+</body>
+</html>
