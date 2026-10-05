@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+     let mes = prompt("Escreva um mês para saber seus dias: ").toLowerCase();
+        
+        if ( mes === "fevereiro"){
+            document.write("No mês de fevereiro têm 28 dias em anos comuns.")
+            document.write("Em anos bissextos têm 29 dias.")
+        }
+        else if (mes === "março" || mes === "janeiro" || mes === "maio" || mes === "julho" || mes === "agosto" || mes === "outubro" || mes === "dezembro"){
+            document.write("Tem 31 dias")
+        }else if (mes === "abril" || mes === "junho" || mes === "setembro" || mes === "novembro"){
+             document.write("Tem 30 dias")
+        }
+
+        
+
+    </script>
+</body>
+</html>

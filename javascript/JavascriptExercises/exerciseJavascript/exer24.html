@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a = parseInt(prompt("Digite um número inteiro: "))
+        let b = parseInt(prompt("Digite outro número inteiro: "))
+         let c = parseInt(prompt("Digite outro número inteiro: "))
+         if(a > b & a > c){
+             if(b> c){
+            document.write(a + "<br/>" + b + "<br/>" + c + "<br/>" )
+            }
+            else{
+                document.write(a + "<br/>" + c + "<br/>" + c + "<br/>" )
+            }
+        }
+         else if ( b> a & b > c ){
+            if(c> a){
+            document.write(b + "<br/>" + c+ "<br/>" + a + "<br/>" )
+            }
+            else{
+                document.write(b + "<br/>" + a + "<br/>" + c + "<br/>" )
+            }
+         }
+           else if ( c> a & c > b ){
+            if(b> a){
+            document.write(c + "<br/>" + b + "<br/>" + a + "<br/>" )
+            }
+            else{
+                document.write(c + "<br/>" + a + "<br/>" + b + "<br/>" )
+            }
+        }
+
+
+
+
+    </script>
+</body>
+</html>

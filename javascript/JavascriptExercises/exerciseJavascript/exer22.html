@@ -7,7 +7,16 @@
 </head>
 <body>
     <Script>
-    let sala = parseFloat(prompt(""))
+    let salar = parseFloat(prompt("Digite seu salário bruto: "))
+    if (salar <= 2000){
+        let bonus = salar * 0.05
+        document.write("Seu bônus de 5%, em cima do seu salário é de: "+ (bonus + salar))
+    }
+    else {
+        let bonus = salar * 0.20
+        document.write("Seu bônus de 20%, em cima do seu salário é de: "+ (bonus + salar))
+
+    }
     </Script>
 </body>
 </html>
