@@ -6,9 +6,49 @@
     <title>Document</title>
 </head>
 <body>
-    <script>
+    <style>
 
+    
+    </style>
+    <script>
         
+      let cod =parseInt(prompt("Digite o código do produto: \n"+"Arroz--cod:100\n"+"Feijão--cod:200 \n"+"Refrigerante--cod:300\n"+"Suco de laranja--cod:400\n"))
+      let quanti = parseInt(prompt("digite a quantidade: "))
+                
+                switch (cod) {
+            case 100:
+                preco = 5.00;
+                break;
+            case 200:
+                preco = 7.50;
+                break;
+                  case 200:
+                preco = 7.50;
+                break;  case 300:
+                preco = 5.99;
+                break;
+                  case 400:
+                preco = 4.00;
+                break;
+            default:
+                alert("Código inválido!");
+                break;
+            }
+
+    if (preco) {
+        let total = preco * quanti;
+        alert("o valor total a pagar é: " + total);
+      }
+
+      
+
+
+    
+
+      
+
+    
+
     </script>
 </body>
 </html>
